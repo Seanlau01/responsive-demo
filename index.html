@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>JS Bin</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+ul,ol{list-style:none;}
+.topnavbar{ 
+  display:flex;
+  height:36px;
+  background:#ddd;
+  margin-left:auto;
+  margin-right:auto;
+  justify-content:space-between;
+}
+.logo{
+  display:flex;
+  width:80px;
+  background:grey;
+  color:white;
+  line-height:24px;
+  padding:6px 0;
+  justify-content:center;
+}
+.navlist{
+   display:flex;
+   line-height:24px;
+   padding:6px 0; 
+}
+
+@media(max-width:420px){
+  .navlist{
+    display:none;
+  }
+  
+}
+.nav_menu{
+  display:none;
+}
+@media(max-width:420px){
+  .nav_menu{
+  display:block;
+}
+  
+}
+.navlist>.navitem{
+   display:flex;
+   justify-content:center;
+   width:60px;
+}
+.banner{
+ width:600px;
+  height:200px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:10px;
+  background:transparent url(canvas.png) no-repeat; 
+  background-size:cover;
+}
+@media(max-width:420px){
+  .banner{
+    width:auto;
+  }
+}
+.wrapper{
+ width:600px;
+  margin: 20px auto;
+  overflow:hidden;
+}
+@media(max-width:420px){
+  .wrapper{
+    width:auto;
+  }
+}
+.content{
+   display:flex;
+  flex-wrap:wrap;
+   margin:0 -5px;
+}
+.contentitem {
+  background: #ddd;
+  width:calc(25% - 10px);
+  height:180px;
+  margin:10px 5px;
+}
+@media (max-width:420px){
+  .contentitem{
+    width:calc(50% - 10px);
+  }
+}
+.art{
+  width:600px;
+  display:flex;
+  justify-content:space-between;
+  background:#ddd;
+  margin:0 auto;
+}
+@media(max-width:420px){
+  .art{
+    width:auto;
+    height:600px;
+    flex-direction:column;
+ 
+  }
+}
+.sider{
+  width:calc(33.333333% - 20px);
+  height:200px;
+  border:1px solid red;
+}
+@media(max-width:420px){
+ .sider{
+  width:auto;
+  height:calc(33.333333% - 20px);
+  border:1px solid red;
+ }
+}
+.main{
+   width:66.666666%; 
+  height:200px;
+  border:1px solid red;
+}
+@media(max-width:420px){
+ .main{
+   width:auto; 
+  height:66.666666%;
+  border:1px solid red;
+ }
+}
+</style>
+</head>
+<body>
+<div class="topnavbar">
+  <div class="logo">logo</div>
+    <ul class="navlist">
+     <li class="navitem">1</li>
+     <li class="navitem">2</li>
+     <li class="navitem">3</li>
+  </ul>
+ <div id="nav_menu" class="nav_menu">三</div>
+</div>
+  
+  <div class="banner"></div>
+  <div class="wrapper">
+    <ul class="content">
+      <li class="contentitem">1</li>
+      <li class="contentitem">2</li>
+      <li class="contentitem">3</li>
+      <li class="contentitem">4</li>
+      <li class="contentitem">5</li>
+      <li class="contentitem">6</li>
+      <li class="contentitem">7</li>
+    </ul>
+  </div>
+  <div class="art">
+    <div class="sider">广告1
+    </div>
+    <div class="main">广告2
+    </div>
+  </div>
+</body>
+</html>
